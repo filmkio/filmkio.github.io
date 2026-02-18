@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>دانلود اپلیکیشن‌های فیلمکیو</title>
+  <meta name="description" content="مرجع دانلود و تماشای آنلاین فیلم و سریال با زیرنویس چسبیده فارسی - دانلود اپلیکیشن‌های FilmKio" />
+
+  <style>
+    :root{
+      --bg:#0b0f19;
+      --card:#11182a;
+      --muted:#9aa4b2;
+      --text:#e7eefc;
+      --accent:#E6830A;
+      --border:rgba(255,255,255,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Vazirmatn", "IRANSans", sans-serif;
+      background: radial-gradient(1000px 600px at 80% -10%, rgba(230,131,10,.25), transparent 60%),
+                  radial-gradient(900px 500px at 10% 0%, rgba(80,110,255,.20), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      min-height:100vh;
+    }
+    .wrap{max-width:980px;margin:0 auto;padding:28px 18px 50px}
+    .hero{
+      display:flex;gap:18px;align-items:flex-start;justify-content:space-between;
+      padding:22px;border:1px solid var(--border);border-radius:18px;
+      background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      backdrop-filter: blur(10px);
+    }
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{
+      width:54px;height:54px;border-radius:16px;
+      background:linear-gradient(135deg, rgba(230,131,10,.95), rgba(230,131,10,.25));
+      box-shadow: 0 10px 30px rgba(230,131,10,.22);
+    }
+    h1{margin:0;font-size:20px;line-height:1.5}
+    .subtitle{margin:8px 0 0;color:var(--muted);font-size:14px;line-height:1.8}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .badge{
+      font-size:12px;color:rgba(231,238,252,.9);
+      padding:8px 10px;border-radius:999px;border:1px solid var(--border);
+      background:rgba(17,24,42,.55)
+    }
+    .grid{
+      display:grid;grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap:14px;margin-top:16px;
+    }
+    @media (max-width:720px){ .grid{grid-template-columns:1fr} .hero{flex-direction:column} }
+    .card{
+      border:1px solid var(--border);border-radius:18px;
+      background:rgba(17,24,42,.65);
+      padding:16px;
+    }
+    .card h2{margin:0 0 8px;font-size:16px}
+    .card p{margin:0;color:var(--muted);font-size:13px;line-height:1.8}
+    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    a.btn, button.btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      text-decoration:none;color:#0b0f19;font-weight:700;
+      background:var(--accent);padding:10px 12px;border-radius:12px;
+      border:0; cursor:pointer;
+      transition:transform .08s ease, filter .2s ease, opacity .2s ease;
+    }
+    a.btn:hover, button.btn:hover{filter:brightness(1.05)}
+    a.btn:active, button.btn:active{transform:translateY(1px)}
+    a.btn.ghost{
+      background:transparent;color:var(--text);
+      border:1px solid var(--border);font-weight:600;
+    }
+
+    /* حالت بزودی */
+    .btn.disabled{
+      background:rgba(255,255,255,.10);
+      color:rgba(231,238,252,.75);
+      border:1px solid rgba(255,255,255,.14);
+      cursor:not-allowed;
+      opacity:.9;
+      pointer-events:none;
+    }
+    .soon{
+      display:inline-flex;align-items:center;gap:8px;
+      margin-top:10px;
+      font-size:12px;
+      color:rgba(154,164,178,.95);
+    }
+    .dot{
+      width:8px;height:8px;border-radius:99px;
+      background:rgba(230,131,10,.95);
+      box-shadow:0 0 0 4px rgba(230,131,10,.18);
+    }
+
+    .note{
+      margin-top:16px;padding:14px;border:1px dashed rgba(255,255,255,.18);
+      border-radius:16px;color:var(--muted);font-size:13px;line-height:1.9
+    }
+    footer{margin-top:18px;color:rgba(154,164,178,.85);font-size:12px}
+    .small{font-size:12px;color:rgba(154,164,178,.85)}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="hero">
+      <div>
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <div>
+            <h1>دانلود اپلیکیشن‌های فیلمکیو (FilmKio)</h1>
+            <div class="subtitle">
+              مرجع دانلود و تماشای آنلاین فیلم و سریال با <b>زیرنویس چسبیده فارسی</b>.
+              نسخه مناسب دستگاهت رو انتخاب کن.
+            </div>
+          </div>
+        </div>
+
+        <div class="badges">
+          <div class="badge">🎬 تماشای آنلاین</div>
+          <div class="badge">💾 دانلود سریع</div>
+          <div class="badge">🇮🇷 زیرنویس چسبیده</div>
+          <div class="badge">📺 Android TV</div>
+        </div>
+      </div>
+
+      <div class="small">
+        <div>آخرین نسخه:</div>
+        <div class="mono" id="version">v1.0.0</div>
+        <div style="height:10px"></div>
+        <a class="btn ghost" href="https://github.com/filmkio/REPO/releases" target="_blank" rel="noopener">مشاهده همه نسخه‌ها</a>
+      </div>
+    </div>
+
+    <div class="grid">
+
+      <div class="card">
+        <h2>📱 دانلود نسخه اندروید</h2>
+        <p>مناسب موبایل و تبلت‌های اندرویدی.</p>
+        <div class="actions">
+          <a class="btn" href="https://github.com/filmkio/REPO/releases/download/v1.0.0/FilmKio-Android.apk">دانلود APK</a>
+          <a class="btn ghost" href="#" onclick="alert('راهنمای نصب را می‌توانی بعداً اضافه کنی');return false;">راهنمای نصب</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>📺 دانلود نسخه اندروید تی‌وی</h2>
+        <p>بهینه برای ریموت و TV Box / Android TV.</p>
+        <div class="actions">
+          <a class="btn" href="https://github.com/filmkio/REPO/releases/download/v1.0.0/FilmKio-AndroidTV.apk">دانلود APK</a>
+          <a class="btn ghost" href="#" onclick="alert('می‌تونی راهنمای نصب TV رو بعداً اضافه کنی');return false;">راهنمای نصب TV</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>🪟 نسخه ویندوز</h2>
+        <p>اپلیکیشن ویندوز بزودی منتشر می‌شود.</p>
+        <div class="actions">
+          <a class="btn disabled" href="#">بزودی</a>
+        </div>
+        <div class="soon"><span class="dot"></span> بزودی (در حال آماده‌سازی)</div>
+      </div>
+
+      <div class="card">
+        <h2>🍎 نسخه مک</h2>
+        <p>اپلیکیشن مک بزودی منتشر می‌شود.</p>
+        <div class="actions">
+          <a class="btn disabled" href="#">بزودی</a>
+        </div>
+        <div class="soon"><span class="dot"></span> بزودی (در حال آماده‌سازی)</div>
+      </div>
+
+    </div>
+
+    <div class="note">
+      <b>آپلود فایل‌ها و لینک دادن:</b><br/>
+      پیشنهاد: فایل‌ها را داخل <span class="mono">Releases</span> همین ریپو آپلود کن و لینک‌های دانلود را مثل نمونه بالا قرار بده.<br/>
+      فقط <span class="mono">USERNAME</span> و <span class="mono">REPO</span> و نسخه (<span class="mono">v1.0.0</span>) را با مقدار واقعی خودت جایگزین کن.
+    </div>
+
+    <footer>
+      © FilmKio — Download Center
+    </footer>
+  </div>
+
+  <script>
+    // فقط برای نمایش نسخه در بالا (اختیاری)
+    document.getElementById('version').textContent = 'v1.0.0';
+  </script>
+</body>
+</html>
