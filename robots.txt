@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://filmkio.github.io/sitemap.xml

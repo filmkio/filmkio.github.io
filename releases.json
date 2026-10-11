@@ -1,0 +1,85 @@
+{
+  "verified": "2026-10-11",
+  "source": "https://filmha5.pw/app/",
+  "publicOrigin": "https://filmkio.run",
+  "platforms": [
+    {
+      "key": "android",
+      "name": "اندروید موبایل",
+      "en": "Android",
+      "version": "3.9.3",
+      "format": "APK",
+      "path": "/wp-content/uploads/2026/09/FilmKio3.9.3.apk?build=793668d9",
+      "note": "برای موبایل و تبلت اندرویدی",
+      "title": "سینمای شما،<br>همیشه همراه شما.",
+      "desc": "فیلم و سریال دلخواهتان را پیدا کنید، تماشا را ادامه دهید و با همان حساب فیلمکیو، روی موبایل همراهش داشته باشید.",
+      "image": "android",
+      "href": "/download/android/"
+    },
+    {
+      "key": "tv",
+      "name": "اندروید تی‌وی",
+      "en": "Android TV",
+      "version": "2.9",
+      "format": "APK",
+      "path": "/wp-content/uploads/2026/07/FilmkioTv.2.9.apk",
+      "note": "تلویزیون، گوگل تی‌وی و اندروید باکس",
+      "title": "تماشا روی<br>بزرگ‌ترین صفحهٔ خانه.",
+      "desc": "نسخهٔ مخصوص تلویزیون و اندروید باکس، با رابط مناسب نمایشگر بزرگ و کنترل با ریموت.",
+      "image": "tv",
+      "href": "/download/tv/"
+    },
+    {
+      "key": "windows",
+      "name": "ویندوز",
+      "en": "Windows",
+      "version": "1.5.3",
+      "format": "EXE",
+      "path": "/wp-content/uploads/2026/03/FilmKio-Setup-1.5.3.exe",
+      "note": "برای کامپیوتر و لپ‌تاپ ویندوزی",
+      "title": "از دسکتاپ،<br>به دنیای سینما.",
+      "desc": "فیلمکیو را روی کامپیوتر نصب کنید و مستقیم از دسکتاپ به آرشیو فیلم و سریال دسترسی داشته باشید.",
+      "image": "windows",
+      "href": "/download/windows/"
+    },
+    {
+      "key": "mac",
+      "name": "مک",
+      "en": "macOS",
+      "version": "1.5.3",
+      "format": "PKG",
+      "path": "/wp-content/uploads/2026/03/FilmKio-1.5.3.pkg",
+      "note": "نصب با بستهٔ macOS",
+      "title": "وقت تماشا،<br>روی مک شما.",
+      "desc": "نسخهٔ دسکتاپ فیلمکیو برای مک؛ دسترسی به آرشیو با همان حساب و اشتراکی که در سایت دارید.",
+      "image": "mac",
+      "href": "/download/mac/"
+    },
+    {
+      "key": "linux",
+      "name": "لینوکس",
+      "en": "Linux",
+      "version": "1.5.3-2",
+      "format": "DEB",
+      "path": "/wp-content/uploads/filmkio-releases/linux/FilmKio-1.5.3-2-amd64.deb",
+      "note": "آزمایشی · Ubuntu 24.04 / Mint 22 · x86_64",
+      "title": "فیلمکیو،<br>حالا روی لینوکس.",
+      "desc": "نسخهٔ آزمایشی برای کامپیوترهای ۶۴ بیتی اینتل و AMD. بستهٔ DEB برای اوبونتو و مینت و راهنمای نصب برای آرچ.",
+      "image": "mac",
+      "href": "/download/linux/"
+    },
+    {
+      "key": "tvweb",
+      "name": "ال‌جی و سامسونگ",
+      "en": "TV Browser",
+      "version": "",
+      "format": "",
+      "path": "",
+      "note": "در مرورگر تلویزیون، بدون نصب",
+      "title": "تلویزیون شما،<br>سینمای شما.",
+      "desc": "فیلمکیو را در مرورگر تلویزیون ال‌جی یا سامسونگ باز کنید و با ریموت کنترل کنید؛ بدون نیاز به فایل نصب.",
+      "image": "tv",
+      "href": "#tv-browser"
+    }
+  ]
+}
