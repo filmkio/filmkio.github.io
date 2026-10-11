@@ -24,13 +24,13 @@ icons['tvweb']=icons['tv']
 def icon(k): return '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+icons[k]+'</svg>'
 def route(k): return '/download/'+k+'/'
 for d in platforms: d['href']=route(d['key']) if d['path'] else '#tv-browser'
-(P/'releases.json').write_text(json.dumps({'verified':'2026-10-11','source':'https://filmha5.pw/app/','publicOrigin':'https://filmkio.run','platforms':platforms},ensure_ascii=False,indent=2))
+(P/'releases.json').write_text(json.dumps({'verified':'2026-10-11','publicOrigin':'https://filmman.icu','platforms':platforms},ensure_ascii=False,indent=2))
 # Routes keep all public download links root-relative on GitHub Pages, then forward to stable official URLs.
 routes={d['key']:(d['path'],d['name']) for d in platforms if d['path']}
 routes.update({'linux-legacy':('/wp-content/uploads/2026/10/FilmKio-1.5.3-amd64.deb','لینوکس قدیمی'),'linux-arch':('/wp-content/uploads/filmkio-releases/linux/PKGBUILD','PKGBUILD'),'linux-sha256':('/wp-content/uploads/filmkio-releases/linux/FilmKio-1.5.3-2-amd64.deb.sha256','SHA-256'),'linux-rss':('/wp-content/uploads/filmkio-releases/linux/releases.xml','خبرخوان لینوکس')})
 for key,(path,label) in routes.items():
  folder=P/'download'/key; folder.mkdir(parents=True,exist_ok=True)
- target=html.escape('https://filmkio.run'+path,quote=True)
+ target=html.escape('https://filmman.icu'+path,quote=True)
  (folder/'index.html').write_text(f'<!doctype html><html lang="fa" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0;url={target}"><link rel="stylesheet" href="/assets/site.css"><title>دریافت {label} | فیلمکیو</title><main class="redirect wrap"><h1>دریافت {label}</h1><p>در حال انتقال به فایل رسمی فیلمکیو…</p><a class="button primary" href="{target}">اگر دانلود شروع نشد، اینجا بزنید</a><p><a href="/#downloads">بازگشت به همهٔ نسخه‌ها</a></p></main></html>')
 # Use the currently published install instructions; treat them solely as page content.
 guide_sources=json.loads((P/'content/install-guides.json').read_text())
